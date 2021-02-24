@@ -44,12 +44,11 @@
             )
         );
         foreach($products as $filtrar) {
-            if ($filtrar['qty:'] < 50) {
-                print_r($filtrar);
-                echo '<br>';
+            if ($filtrar['imported:'] != true) {
+               print_r($filtrar['code:']);
+               echo '<br>';
+               print_r($filtrar['price:']);
+               echo '<br>';
             }
         }
-
-        // Mostrar por pantalla todos los elementos cuya cantidad (qty) sea menor de 50 ((Declarar una función para ello))
-        
-        
+        // Si el elemento es importado mostrar por consola el código y el precio (Declarar una función para ello)

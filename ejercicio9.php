@@ -20,7 +20,7 @@
         $sumcifra = 0;
         $resto = 0;
         for ($i =$elements-1 ; $i >=0; $i--) {
-            $sumcifra = $array[$i] + $array1[$i]+$llevada;
+            $sumcifra = $array[$i] - $array1[$i]-$llevada;
             $llevada = $sumcifra / 10;
             $resto = $sumcifra % 10;
             $array2[$i + 1] = $resto;
